@@ -1,7 +1,7 @@
-#Backend for StudyNotion – An EdTech Platform
+# Backend for StudyNotion – An EdTech Platform
 This repository contains the complete backend implementation of StudyNotion, an educational technology platform that enables users to register, enroll in courses, track progress, and make secure payments.
 
-#Core Features
+# Core Features
 User Authentication & Authorization
 Secure login and registration using JWT-based auth and role-based access control for admins, instructors, and students.
 
