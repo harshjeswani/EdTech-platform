@@ -1,31 +1,35 @@
-# React & Tailwind CSS Starter Pack
+#Backend for StudyNotion – An EdTech Platform
+This repository contains the complete backend implementation of StudyNotion, an educational technology platform that enables users to register, enroll in courses, track progress, and make secure payments.
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+#Core Features
+User Authentication & Authorization
+Secure login and registration using JWT-based auth and role-based access control for admins, instructors, and students.
 
-## Usage
+Course Management
+Instructors can create, update, and publish courses with support for sections, sub-sections, videos, and descriptions.
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+Student Enrollment & Progress Tracking
+Learners can enroll in courses, track their completion, and revisit content at any time.
 
-1. Clone the repository to your local machine.
-    ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
-    ```
+Ratings & Reviews
+Students can provide feedback for courses, and ratings are aggregated for public display.
 
-1. Install the required packages.
-    ```sh
-    cd react-tailwind-css-starter-pack
-    npm install
-    ```
+Secure Payments with Razorpay
+Integration with Razorpay to handle checkout, order creation, and payment verification for paid courses.
 
-1. Start the development server.
-    ```sh
-    npm start
-    ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+Cloud Storage for Videos
+Course videos and assets are uploaded to cloud storage (e.g., Cloudinary) for efficient delivery.
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+Email Notifications
+Automated email communication for key events like signup, enrollment, and payment confirmation.
 
-## Contributing
+# Tech Stack
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+Node.js & Express – Server and routing
+MongoDB & Mongoose – NoSQL database and ORM
+JWT & Bcrypt – Authentication and password hashing
+Razorpay API – Payment gateway integration
+Cloudinary – Media hosting
+Nodemailer – Email delivery service
+Dotenv – Environment configuration
+
